@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counseling Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h2 class="form-title">We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="progress-bar" id="progressBar"></div>
+
+                <div class="input-group">
+                    <label for="name">Full Name<span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="counselor">Counselor<span class="required">*</span></label>
+                    <select id="counselor" name="counselor" required>
+                        <option value="" disabled selected>Select your counselor</option>
+                        <option value="Namrata Bhardwaj">Namrata Bhardwaj</option>
+                        <option value="Kshitij Jakhmola">Kshitij Jakhmola</option>
+                        <option value="Kiran S M">Kiran S M</option>
+                        <!-- Add more counselors as needed -->
+                    </select>
+                    <small class="error-message"></small>
+                </div>
+
+                <!-- Review Criteria -->
+                <div class="input-group">
+                    <label>Timeliness<span class="required">*</span></label>
+                    <div class="rating-container">
+                        <input type="radio" id="timeliness1" name="timeliness" value="1" required>
+                        <label for="timeliness1" class="rating-star">&#9733;</label>
+                        <input type="radio" id="timeliness2" name="timeliness" value="2">
+                        <label for="timeliness2" class="rating-star">&#9733;</label>
+                        <input type="radio" id="timeliness3" name="timeliness" value="3">
+                        <label for="timeliness3" class="rating-star">&#9733;</label>
+                        <input type="radio" id="timeliness4" name="timeliness" value="4">
+                        <label for="timeliness4" class="rating-star">&#9733;</label>
+                        <input type="radio" id="timeliness5" name="timeliness" value="5">
+                        <label for="timeliness5" class="rating-star">&#9733;</label>
+                    </div>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Communication<span class="required">*</span></label>
+                    <div class="rating-container">
+                        <input type="radio" id="communication1" name="communication" value="1" required>
+                        <label for="communication1" class="rating-star">&#9733;</label>
+                        <input type="radio" id="communication2" name="communication" value="2">
+                        <label for="communication2" class="rating-star">&#9733;</label>
+                        <input type="radio" id="communication3" name="communication" value="3">
+                        <label for="communication3" class="rating-star">&#9733;</label>
+                        <input type="radio" id="communication4" name="communication" value="4">
+                        <label for="communication4" class="rating-star">&#9733;</label>
+                        <input type="radio" id="communication5" name="communication" value="5">
+                        <label for="communication5" class="rating-star">&#9733;</label>
+                    </div>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-group">
+                    <label>Overall Experience<span class="required">*</span></label>
+                    <div class="rating-container">
+                        <input type="radio" id="experience1" name="experience" value="1" required>
+                        <label for="experience1" class="rating-star">&#9733;</label>
+                        <input type="radio" id="experience2" name="experience" value="2">
+                        <label for="experience2" class="rating-star">&#9733;</label>
+                        <input type="radio" id="experience3" name="experience" value="3">
+                        <label for="experience3" class="rating-star">&#9733;</label>
+                        <input type="radio" id="experience4" name="experience" value="4">
+                        <label for="experience4" class="rating-star">&#9733;</label>
+                        <input type="radio" id="experience5" name="experience" value="5">
+                        <label for="experience5" class="rating-star">&#9733;</label>
+                    </div>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-group full-size">
+                    <label for="feedback">Additional Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="6" placeholder="Enter your detailed feedback here..."></textarea>
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
